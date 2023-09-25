@@ -17,11 +17,11 @@ So why not reuse a legitimate service used by many organisations to communicate,
 Well that is where Slack can be a good choice. Is already used by many teams so not going to stand out on the firewall, has SSL/TLS encryption so has a basic layer of encryption on the data stream.
 
 ### Features:
--Coded Python
--Only uses common/builtin Python modules (Slack messages uses requests, not module)   
--Jitter on Slack polling
--Onconnect the agent posts the external IP, username, hostname to the Slack channel
--Agent runs commands (Windows/Linux) and returns the command output as a threaded reply in Slack.   
+- Coded Python
+- Only uses common/builtin Python modules (Slack messages uses requests, no 3rd party modules)   
+- Jitter on Slack polling
+- Onconnect the agent posts the external IP, username, hostname to the Slack channel
+- Agent runs commands (Windows/Linux) and returns the command output as a threaded reply in Slack.   
 
 ## Requirements:
 You are going to need to have a Slack server you control, then create a bot with the Channel:history and Chat:write permissions (to get a bot API key)
